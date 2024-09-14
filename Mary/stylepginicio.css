@@ -1,0 +1,145 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color:#89C2D9;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.fundo2 {
+    background: url(Images/fundocarta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 94%;
+    width: 100vh;
+    padding: 5%;
+    font-family: 'letrademao';
+    color: #202020;
+    justify-content: center;
+    text-align: left; 
+    box-sizing: border-box; 
+    display: flexbox;
+}
+
+.fontetitulo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #202020;
+}
+.fontecorpo {
+    font-size: 25px;
+    font-weight: 500;
+    color: #202020;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('Fontes/Montserrat-VariableFont_wght.ttf') format('truetype');
+    }
+
+    
+@font-face {
+    font-family: 'letrademao';
+    src: url('Fontes/IndieFlower-Regular.ttf') format('truetype');
+    }
+
+    body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        min-height: 100vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color:#89C2D9;
+        padding: 20px; 
+        box-sizing: border-box;
+    }
+    
+    .fundo2 {
+        background: url(Images/fundocarta.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 94%;
+        width: 100vh;
+        padding: 5%;
+        font-family: 'letrademao';
+        color: #202020;
+        justify-content: center;
+        text-align: left; 
+        box-sizing: border-box; 
+        display: block;
+    }
+    
+    .fontetitulo {
+        font-size: 25px;
+        font-weight: bold;
+        color: #202020;
+    }
+    .fontecorpo {
+        font-size: 25px;
+        font-weight: 500;
+        color: #202020;
+    }
+    
+    @font-face {
+        font-family: 'montserrat';
+        src: url('Fontes/Montserrat-VariableFont_wght.ttf') format('truetype');
+        }
+    
+        
+    @font-face {
+        font-family: 'letrademao';
+        src: url('Fontes/IndieFlower-Regular.ttf') format('truetype');
+        }
+    
+    /* Carousel Styles */
+    .carousel-container {
+        position: relative;
+        max-width: 600px;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+    
+    .carousel-images {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-images img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .carousel-buttons {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .carousel-button {
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        font-size: 24px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .carousel-button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }

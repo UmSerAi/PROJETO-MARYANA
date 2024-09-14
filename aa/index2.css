@@ -1,0 +1,122 @@
+body {
+    background-color: #141414;
+    margin: 0; 
+    padding: 0;
+    overflow: hidden;
+}
+@keyframes growPage {
+    from {
+        transform: scale(1.2); 
+    }
+    to {
+        transform: scale(1); 
+    }
+}
+h1 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 67px;
+    font-weight: lighter;
+    margin: 0;
+    margin-top: -24px;
+    box-sizing: border-box;
+    padding: 20px 0;
+    cursor: default;
+}
+
+div.square {
+    position: relative;
+    width: 200px;
+    box-sizing: border-box;
+    height: 200px;
+    border-radius: 4px;
+    padding: 50px;
+    margin: 30px;
+    margin-top: 2px;
+    border: 6px solid transparent;
+}
+
+.perfil:hover {
+    border: 6px solid #ffffff;
+}
+.cperfil:hover {
+    background-color: #fff;
+}
+.square:hover > .caption{
+    color:#fff;
+}
+.cperfil{
+background: url("Images/adicionarperfil.png") no-repeat;
+background-color: #141414;
+background-size: cover;
+cursor: pointer;
+}
+.perfil{
+    background: url("Images/maryana.png") no-repeat;
+    background-color: #141414;
+    background-size: cover;
+    cursor: grab;
+}
+.perfil:active{
+    cursor:grabbing;
+}
+.caption {
+    position: absolute;
+    bottom: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    color: #666666;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container2 {
+    margin-top: 13%;
+    text-align: center;
+    animation: growPage 0.5s ease-in-out;
+}
+
+.container {
+    margin-top: 0.8%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    animation: growPage 0.5s ease-in-out;
+}
+
+.shadow-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140px; 
+    background-image: linear-gradient(to bottom, rgb(5, 5, 5), rgb(14, 14, 14), transparent, transparent);
+    z-index: 9999;
+}
+.centro-tela {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza horizontal e verticalmente */
+  }
+.botao {
+    border: 1px solid #666666;
+    text-align: center;
+    color: #666666;
+    width: 222px;
+    font-weight: 500;
+    height: 50px;
+    padding: 12px;
+    font-size: 22px;
+    box-sizing: border-box;
+    animation: growPage 0.5s ease-in-out;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+  .botao:hover{
+    color:#fff;
+    border-color: #fff;
+  }
